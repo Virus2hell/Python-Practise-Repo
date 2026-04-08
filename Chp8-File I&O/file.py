@@ -1,0 +1,4 @@
+f = open("../Chp8-File I&O/file.txt")  # The open() function is used to open a file in Python. The first argument is the name of the file, and the second argument is the mode in which we want to open the file. In this case, we are opening the file in read mode ("r"), which allows us to read the contents of the file but not modify it.
+data = f.read() # The read() method reads the entire contents of the file and returns it as a string. If the file is large, this can consume a lot of memory, so it's important to use it with caution. If you only want to read a specific number of characters or lines, you can use other methods like readline() or readlines() instead.
+print(data)
+f.close()  # It is important to close the file after we are done with it to free up system resources and avoid potential issues with file locks or data corruption.
